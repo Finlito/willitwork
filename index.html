@@ -652,11 +652,11 @@
 
       function manifestFiles()
       {
-        return [ connect-src = "runner.data",
-connect-src = "runner.js",
-connect-src = "runner.wasm",
-connect-src = "audio-worklet.js",
-connect-src = "game.unx" ].join( ";");
+        return [ "runner.data",
+"runner.js",
+"runner.wasm",
+"audio-worklet.js",
+"game.unx" ].join( ";");
       }
 
       function manifestFilesMD5()
