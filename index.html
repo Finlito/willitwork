@@ -361,8 +361,8 @@
       <div class="emscripten" id="status">Downloading...</div>
 
       <progress value="0" max="100" id="progress" hidden="1"></progress>
-      <img id="QRCode" class="qrCode" connect-src="runner.svg" alt="URL QR Code" hidden="1"></img>
-      <img id="QR2Code" class="qrCode" connect-src="runnerLocal.svg" alt="URL QR2 Code" hidden="1"></img>
+      <img id="QRCode" class="qrCode" src="runner.svg" alt="URL QR Code" hidden="1"></img>
+      <img id="QR2Code" class="qrCode" src="runnerLocal.svg" alt="URL QR2 Code" hidden="1"></img>
     </div>
     <div class="multiplayer-stats" id="multiplayer-stats">
       [no stats available]
@@ -403,6 +403,7 @@
      data-ad-client="ca-pub-123"
      data-ad-frequency-hint="30s"
      data-adbreak-test="on"
+     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
    </script>
 
    <script>
@@ -652,10 +653,10 @@
       function manifestFiles()
       {
         return [ "runner.data",
-"runner.js",
-"runner.wasm",
-"audio-worklet.js",
-"game.unx" ].join( ";");
+connect-src = "runner.js",
+connect-src = "runner.wasm",
+connect-src = "audio-worklet.js",
+connect-src = "game.unx" ].join( ";");
       }
 
       function manifestFilesMD5()
@@ -892,6 +893,6 @@
         lockOrientationIfSupported();
       });
     </script>
-    <script async type="text/javascript" connect-src="runner.js"></script>
+    <script async type="text/javascript" src="runner.js"></script>
   </body>
 </html>
