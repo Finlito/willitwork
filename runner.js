@@ -1,5 +1,4 @@
-
-Content-Security-Policy: base-uri 'self'; default-src; connect-src *; report-uri https://finlito.github.io/willitwork/;
+Content-Security-Policy: base-uri 'self'; default-src; script-src *; connect-src *; report-uri https://finlito.github.io/willitwork/;
 var h;h||(h=typeof Module !== 'undefined' ? Module : {});h.Sl||(h.Sl=0);h.Sl++;
 h.ENVIRONMENT_IS_PTHREAD||function(a){function b(n,q,p,t){if("object"===typeof process&&"object"===typeof process.versions&&"string"===typeof process.versions.node)require("fs").readFile(n,function(r,B){r?t(r):p(B.buffer)});else{var v=new XMLHttpRequest;v.open("GET",n,!0);v.responseType="arraybuffer";v.onprogress=function(r){var B=q;r.total&&(B=r.total);if(r.loaded){v.si?h.bl[n].loaded=r.loaded:(v.si=!0,h.bl||(h.bl={}),h.bl[n]={loaded:r.loaded,total:B});var y=B=r=0,I;for(I in h.bl){var O=h.bl[I];
 r+=O.total;B+=O.loaded;y++}r=Math.ceil(r*h.Sl/y);h.setStatus&&h.setStatus("Downloading data... ("+B+"/"+r+")")}else!h.bl&&h.setStatus&&h.setStatus("Downloading data...")};v.onerror=function(){throw Error("NetworkError for: "+n);};v.onload=function(){if(200==v.status||304==v.status||206==v.status||0==v.status&&v.response)p(v.response);else throw Error(v.statusText+" : "+v.responseURL);};v.send(null)}}function c(n){console.error("package error:",n)}function d(){function n(v,r,B){this.start=v;this.end=
